@@ -1,12 +1,40 @@
-p
+*
 {
-    font-size: 30px;
-    color: dodgerblue;
-    border: 2px solid black;
+    margin: 5px;
 }
 
-strong
+.box-rgb
 {
-    color: initial;
-    border: inherit;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(1, 162, 255);
+}
+.box-rgba
+{
+    height: 100px;
+    width: 100px;
+    /*  a (alpha) within 0-1     */
+    background-color: rgba(115, 255, 1, 0.5);
+}
+
+.box-hex
+{
+    height: 100px;
+    width: 100px;
+    background-color: #ffda09;
+}
+
+.box-hsl
+{
+    height: 100px;
+    width: 100px;
+    background-color: hsl(268, 98%, 50%);
+    /* background-color: hsl(268deg 98% 50%); */
+}
+
+.box-hsla
+{
+    height: 100px;
+    width: 100px;
+    background-color: hsla(2, 98%, 50%, 0.5);
 }
