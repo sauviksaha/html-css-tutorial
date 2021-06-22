@@ -1,40 +1,43 @@
 *
 {
-    margin: 5px;
+    margin: 10px;
 }
 
-.box-rgb
+.box-grad
 {
-    height: 100px;
-    width: 100px;
-    background-color: rgb(1, 162, 255);
-}
-.box-rgba
-{
-    height: 100px;
-    width: 100px;
-    /*  a (alpha) within 0-1     */
-    background-color: rgba(115, 255, 1, 0.5);
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(red, gold);
 }
 
-.box-hex
+.box-grad-right
 {
-    height: 100px;
-    width: 100px;
-    background-color: #ffda09;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right, dodgerblue, gold);
+    
 }
 
-.box-hsl
+.box-grad-bottom-right
 {
-    height: 100px;
-    width: 100px;
-    background-color: hsl(268, 98%, 50%);
-    /* background-color: hsl(268deg 98% 50%); */
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to bottom right, dodgerblue, gold);
+    
 }
 
-.box-hsla
+.box-grad-deg
 {
-    height: 100px;
-    width: 100px;
-    background-color: hsla(2, 98%, 50%, 0.5);
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(45deg, deeppink, cyan, yellow);
+    
+}
+
+.box-grad-percentage
+{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(deeppink 50%, dodgerblue, tomato);
+    
 }
