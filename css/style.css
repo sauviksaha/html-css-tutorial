@@ -1,9 +1,12 @@
 p
 {
-    background-color: aquamarine;
+    font-size: 30px;
+    color: dodgerblue;
+    border: 2px solid black;
 }
 
-p:hover
+strong
 {
-    background-color: deeppink;
+    color: initial;
+    border: inherit;
 }
