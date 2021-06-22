@@ -3,41 +3,30 @@
     margin: 10px;
 }
 
-.box-grad
+.box-circle
 {
     height: 200px;
     width: 200px;
-    background: linear-gradient(red, gold);
+    background: radial-gradient(deeppink, gold);
 }
 
-.box-grad-right
+.box-rect
 {
     height: 200px;
-    width: 200px;
-    background: linear-gradient(to right, dodgerblue, gold);
-    
+    width: 500px;
+    background: radial-gradient(dodgerblue, gold);
 }
 
-.box-grad-bottom-right
+.box-rect-circle
 {
     height: 200px;
-    width: 200px;
-    background: linear-gradient(to bottom right, dodgerblue, gold);
-    
+    width: 500px;
+    background: radial-gradient(circle, violet, blue);
 }
 
-.box-grad-deg
+.box-rect-circle-top-left
 {
     height: 200px;
-    width: 200px;
-    background: linear-gradient(45deg, deeppink, cyan, yellow);
-    
-}
-
-.box-grad-percentage
-{
-    height: 200px;
-    width: 200px;
-    background: linear-gradient(deeppink 50%, dodgerblue, tomato);
-    
+    width: 500px;
+    background: radial-gradient(circle at top left, red, gold);
 }
