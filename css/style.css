@@ -3,30 +3,41 @@
     margin: 10px;
 }
 
-.box-circle
+.box
 {
     height: 200px;
     width: 200px;
-    background: radial-gradient(deeppink, gold);
+    background: deeppink;
+
+    /* border: <size> <type> <color>; */
+    border: 10px solid dodgerblue;
+
 }
 
-.box-rect
+.box-etc
 {
     height: 200px;
-    width: 500px;
-    background: radial-gradient(dodgerblue, gold);
+    width: 200px;
+    background: deeppink;
+
+    /* border: <size> <type> <color>; */
+    border: 20px dashed dodgerblue;
+
+    /*border-width: <top> <right> <bottom> <left>; */
+    border-width: 10px 20px 30px 40px;
+
+    border-style: solid;
+
+    border-radius: 10px;
 }
 
-.box-rect-circle
+.circle
 {
+    width: 200px;
     height: 200px;
-    width: 500px;
-    background: radial-gradient(circle, violet, blue);
-}
+    background-color: gold;
 
-.box-rect-circle-top-left
-{
-    height: 200px;
-    width: 500px;
-    background: radial-gradient(circle at top left, red, gold);
+    border: 5px solid dodgerblue;
+
+    border-radius: 100px;
 }
