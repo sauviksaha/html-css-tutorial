@@ -18,13 +18,9 @@ body
 
 .box
 {
-
-    /* flex-grow: value; 
-        works on 
-        the browser adds all grow property and create spaces evenly
-    */
-
+    flex-basis: 15rem;
     flex-grow: 1;
+    flex-shrink: 1;
 
     width: 5rem ;
     height: 5rem;
@@ -35,42 +31,5 @@ body
 
 .box:first-child
 {
-    flex-grow: 0;
+    flex-shrink: 0;
 }
-
-.box:last-child
-{
-    flex-grow: 2;
-}
-
-/* 
-    ### Axes ###
-    
-    > main (primary)
-    > cross (secondary)
-    
-    for
-    flex-direction: column;
-    --- cross
-    |
-    |
-    main
-
-
-    for
-    flex-direction: row;
-    --- main
-    |
-    |
-    cross
-
-    # Aligning items
-
-    justify-content (along the main axis)
-    align-items (along the cross axis)
-
-
-
-
-
- */
