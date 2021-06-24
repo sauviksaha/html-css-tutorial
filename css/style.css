@@ -1,28 +1,44 @@
-*
+.boxes
 {
-    margin: 0;
+    border: 5px solid lightgrey;
 }
 
 .box
 {
-    width: 10rem;
-    height: 100vh;
-
-    background: gold;
-    border-top: 3px solid dodgerblue;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
 }
 
+.box-one
+{
+    background-color: deeppink;
+}
+.box-two
+{
+    background-color: tomato;
+    position: relative;
+    left: 3rem;     
+    bottom: 2rem;
+    z-index: -1;
+}
+.box-three
+{
+    background-color: dodgerblue;
+}
+
+
 /* 
-Measurements
+    #Positioning
 
-Absolute    |   Relative
+    static  -static
 
-    px      |       %   - relative to size of container
-    pt      |       
-    in      |       vh  - relative to the viewport height
-    cm      |       vw  - relative to the viewport width
-    mm      |       
-            |       em  - relative to the font size
-            |       rem - relative to the font size 
-            
-*/
+    relative
+        left | right
+        top | bottom
+
+    
+        z-index: <value>;
+                +ve value to bring forward
+                -ve value to move backward
+    */
