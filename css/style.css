@@ -22,11 +22,9 @@ body
 .box-two
 {
     background-color: tomato;
-    position: fixed;
-    left: 1rem;
-    right: 1rem;
-    width: auto;
-    top: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .box-three
 {
@@ -39,13 +37,13 @@ body
 
     static  -static
 
-    relative
+    relative - relative to the elements normal position
         left | right
         top | bottom
     
-    absolute
+    absolute - relative to the parent element
     
-    fixed
+    fixed - relative to the viewport
 
     
     z-index: <value>;
