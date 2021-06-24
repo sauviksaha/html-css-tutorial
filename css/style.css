@@ -7,14 +7,13 @@ body
 {
     border: 3px solid dodgerblue;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    /* 
-    flex-direction: row; -default
-    flex-direction: column;
-    flex-direction: row-reverse;
-    flex-direction: column-reverse; 
-    */
+    justify-content: center;
+    align-items: center;
+    
+    height: 90vh;
+
 }
 
 .box
@@ -25,3 +24,45 @@ body
     background: gold;
     margin: 1rem;
 }
+
+.box:first-child
+{
+    align-self: flex-start;
+}
+
+.box:last-child
+{
+    align-self: flex-end;
+}
+
+/* 
+    ### Axes ###
+    
+    > main (primary)
+    > cross (secondary)
+    
+    for
+    flex-direction: column;
+    --- cross
+    |
+    |
+    main
+
+
+    for
+    flex-direction: row;
+    --- main
+    |
+    |
+    cross
+
+    # Aligning items
+
+    justify-content (along the main axis)
+    align-items (along the cross axis)
+
+
+
+
+
+ */
