@@ -18,21 +18,18 @@ body
 
 .box
 {
-    width: 100px;
-    height: 100px;
+    flex-basis: 10rem; /* overlaps width as fles direction is row*/
 
+    width: 5rem ;
+    height: 5rem;
+    
     background: gold;
     margin: 1rem;
 }
 
 .box:first-child
 {
-    align-self: flex-start;
-}
-
-.box:last-child
-{
-    align-self: flex-end;
+    flex-basis: 2rem;
 }
 
 /* 
