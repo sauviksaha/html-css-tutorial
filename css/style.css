@@ -18,9 +18,9 @@ body
 
 .box
 {
-    flex-basis: 15rem;
-    flex-grow: 1;
-    flex-shrink: 1;
+
+    /* flex: <grow> <shrink> <basis>;*/
+    flex: 15rem 1 1;
 
     width: 5rem ;
     height: 5rem;
