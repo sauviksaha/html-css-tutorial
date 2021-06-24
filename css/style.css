@@ -18,7 +18,13 @@ body
 
 .box
 {
-    flex-basis: 10rem; /* overlaps width as fles direction is row*/
+
+    /* flex-grow: value; 
+        works on 
+        the browser adds all grow property and create spaces evenly
+    */
+
+    flex-grow: 1;
 
     width: 5rem ;
     height: 5rem;
@@ -29,7 +35,12 @@ body
 
 .box:first-child
 {
-    flex-basis: 2rem;
+    flex-grow: 0;
+}
+
+.box:last-child
+{
+    flex-grow: 2;
 }
 
 /* 
