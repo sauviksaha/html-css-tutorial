@@ -1,52 +1,27 @@
 body
 {
-    height: 200vh;
+    margin: 10px;
 }
 
-.boxes
+.container
 {
-    border: 5px solid lightgrey;
-    position: relative;
+    border: 3px solid dodgerblue;
+    display: flex;
+    flex-direction: column;
+
+    /* 
+    flex-direction: row; -default
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; 
+    */
 }
 
 .box
 {
-    width: 5rem;
-    height: 5rem;
+    width: 100px;
+    height: 100px;
+
+    background: gold;
+    margin: 1rem;
 }
-
-.box-one
-{
-    background-color: deeppink;
-}
-.box-two
-{
-    background-color: tomato;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.box-three
-{
-    background-color: dodgerblue;
-}
-
-
-/* 
-    #Positioning
-
-    static  -static
-
-    relative - relative to the elements normal position
-        left | right
-        top | bottom
-    
-    absolute - relative to the parent element
-    
-    fixed - relative to the viewport
-
-    
-    z-index: <value>;
-                +ve value to bring forward
-                -ve value to move backward
-    */
