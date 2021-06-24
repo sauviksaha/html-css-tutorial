@@ -1,13 +1,18 @@
+body
+{
+    height: 200vh;
+}
+
 .boxes
 {
     border: 5px solid lightgrey;
+    position: relative;
 }
 
 .box
 {
     width: 5rem;
     height: 5rem;
-    position: relative;
 }
 
 .box-one
@@ -17,10 +22,11 @@
 .box-two
 {
     background-color: tomato;
-    position: relative;
-    left: 3rem;     
-    bottom: 2rem;
-    z-index: -1;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    top: 0;
 }
 .box-three
 {
@@ -36,9 +42,13 @@
     relative
         left | right
         top | bottom
+    
+    absolute
+    
+    fixed
 
     
-        z-index: <value>;
+    z-index: <value>;
                 +ve value to bring forward
                 -ve value to move backward
     */
