@@ -10,6 +10,12 @@ body
 
     grid-template: 100px auto 100px / 30fr 70fr;
     
+    row-gap: 10px;
+    column-gap: 10px;
+
+    gap: 10px 10px;
+    /*gap: row-gap column-gap */
+
     /* grid-template-rows: 100px 100px 100px;
     grid-template-columns: repeat(2, 100px); */
     
