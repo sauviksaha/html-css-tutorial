@@ -5,31 +5,39 @@ body
 
 .container
 {
-    border: 3px solid dodgerblue;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+
+    grid-template: repeat(3, 100px) / repeat(2, 100px); 
+    
+    /* grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(2, 100px); */
+    
+    justify-items: center;
+    align-items: center;
 
     justify-content: center;
-    align-items: center;
+    align-content: center;
+
+    height: 100vh;
+
+    /*
+    -items for particular items under grid
+    justify-items: <value>;
+    align-items: <value>;  
     
-    height: 90vh;
+    -content for total grid
+    justify-content: <value>;
+    align-content: <value>;
+
+    */
+
 
 }
 
 .box
 {
-
-    /* flex: <grow> <shrink> <basis>;*/
-    flex: 15rem 1 1;
-
-    width: 5rem ;
+    width: 5rem;
     height: 5rem;
-    
-    background: gold;
-    margin: 1rem;
-}
+    background: tomato;
 
-.box:first-child
-{
-    flex-shrink: 0;
 }
