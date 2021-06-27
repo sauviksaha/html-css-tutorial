@@ -1,6 +1,7 @@
 body
 {
     margin: 10px;
+    background: #dddddd;
 }
 
 .container
@@ -12,11 +13,9 @@ body
     /* grid-template-rows: 100px 100px 100px;
     grid-template-columns: repeat(2, 100px); */
     
-    justify-items: center;
-    align-items: center;
+    justify-items: stretch;
+    align-items: stretch;
 
-    justify-content: center;
-    align-content: center;
 
     height: 100vh;
 
@@ -36,8 +35,5 @@ body
 
 .box
 {
-    width: 5rem;
-    height: 5rem;
-    background: tomato;
-
+    background-color: dodgerblue;
 }
