@@ -8,13 +8,11 @@ body
 {
     display: grid;
 
-    grid-template: repeat(3, 100px) / repeat(2, 100px); 
+    grid-template: 100px auto 100px / 30fr 70fr;
     
     /* grid-template-rows: 100px 100px 100px;
     grid-template-columns: repeat(2, 100px); */
     
-    justify-items: stretch;
-    align-items: stretch;
 
 
     height: 100vh;
